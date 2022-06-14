@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #092516;
+    margin: 2em;
+}
+
+* {
+    font-family: Tahoma, sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #68dcd0;
+}
+
+h2 {
+    font-family: Tahoma;
+    color: #b2f1eb;
+}
+
+button {
+    padding: 5px;
+}
+
+.id {
+    background-color: #529c75;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.name {
+    color: #000;
+}
+
+input {
+    color: #555;
+}

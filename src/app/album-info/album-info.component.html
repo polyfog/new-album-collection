@@ -1,0 +1,8 @@
+<div *ngIf="album">
+    <h2>{{album.name | uppercase}} Details</h2>
+    <div>Id: {{album.id}}</div>
+    <div>
+        <label for="album-name">Album name: {{album.name}} </label>
+        <input id="album-name" [(ngModel)]="album.name" placeholder="name">
+    </div>
+</div>

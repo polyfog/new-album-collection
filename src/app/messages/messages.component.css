@@ -1,0 +1,17 @@
+.clear {
+    font-family: Tahoma;
+    background-color: rgb(180, 0, 0);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2em;
+    border-style: groove;
+    border-width: 2px;
+    border-color: #000;
+    padding: 10px;
+}
+
+.messages {
+    font-family: "Source Code Pro";
+    font-size: 15px;
+    color:rgba(0, 219, 37, 0.829);
+}
