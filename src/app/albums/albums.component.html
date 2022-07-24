@@ -1,12 +1,10 @@
 <h2>Your Albums</h2>
 <ul class="albums">
     <li *ngFor="let album of albums">
-        <button type="button" (click)="onSelect(album)">
-        <!-- [click.selected]="album === selectedAlbum"> -->
-            <span class="id">{{album.id}}</span>
-            <span class="name">     {{album.name}}</span>
-        </button>
+        <a routerLink="/detail/{{album.id}}">
+            <span class="badge">{{album.id}}</span> {{album.name}}
+        </a>
+        <br>
+        <br>
     </li>
 </ul>
-
-<app-album-info [album]="selectedAlbum"></app-album-info>

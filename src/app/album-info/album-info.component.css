@@ -1,0 +1,12 @@
+button {
+    background-color: rgb(131, 206, 196);
+    border-radius: 5px;
+    padding: 7px;
+    color: rgb(0, 0, 0);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(107, 182, 172);
+}

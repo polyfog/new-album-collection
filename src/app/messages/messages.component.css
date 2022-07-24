@@ -1,6 +1,7 @@
 .clear {
     font-family: Tahoma;
-    background-color: rgb(180, 0, 0);
+    /* background-color: rgb(180, 0, 0); */
+    background-color: #981919;
     color: #fff;
     font-weight: bold;
     border-radius: 2em;
@@ -13,5 +14,5 @@
 .messages {
     font-family: "Source Code Pro";
     font-size: 15px;
-    color:rgba(0, 219, 37, 0.829);
+    color:rgba(23, 253, 234, 0.829);
 }

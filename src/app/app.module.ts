@@ -7,13 +7,15 @@ import { AlbumsComponent } from './albums/albums.component';
 import { FormsModule } from '@angular/forms';
 import { AlbumInfoComponent } from './album-info/album-info.component';
 import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlbumsComponent,
     AlbumInfoComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

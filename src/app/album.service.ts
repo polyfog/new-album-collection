@@ -11,6 +11,14 @@ export class AlbumService {
 
   constructor(private messageService: MessageService) { }
 
+  getAlbum(id: number): Observable<Album> {
+
+    const album = ALBUMS.find(a => a.id === id)!;
+    this.messageService.add(`HeroService: fetched hero id=${id}`);
+    return of(album);
+
+  }
+
   getAlbums(): Observable<Album[]> {
     const albums = of(ALBUMS);
     this.messageService.add("AlbumService: fetched albums");

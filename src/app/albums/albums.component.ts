@@ -12,17 +12,10 @@ export class AlbumsComponent implements OnInit {
 
   constructor(private albumService: AlbumService, private messageService: MessageService) { }
 
-  ngOnInit(): void {
-    this.getAlbums();
-  }
-
   albums: Album[] = [];
 
-  selectedAlbum?: Album;
-
-  onSelect(album: Album): void {
-    this.selectedAlbum = album;
-    this.messageService.add(`AlbumsComponent: Selected album id=${album.id}`);
+  ngOnInit(): void {
+    this.getAlbums();
   }
 
   getAlbums() {
