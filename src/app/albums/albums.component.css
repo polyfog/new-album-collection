@@ -24,6 +24,34 @@ span {
     align-items: center;
 }
 
+.add-button {
+    background-color: rgb(4, 207, 55);
+    border-radius: 5px;
+    padding: 7px;
+    color: rgb(0, 0, 0);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.add-button:hover {
+    background-color: rgb(0, 170, 43);
+}
+
+.delete-button {
+    background-color: #a82626;
+    color: #000;
+    margin-left: 5px;
+    padding: 3px 7px 3px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
 /* .name {
     color: #000;
 } */

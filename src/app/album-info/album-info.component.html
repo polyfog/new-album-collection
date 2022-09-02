@@ -1,12 +1,15 @@
 <div *ngIf="album">
     <h2>{{album.name | uppercase}} Details</h2>
-    <div>Id: {{album.id}}</div>
+    <div><span>Id: </span>{{album.id}}</div>
     <div>
-        <label for="album-name">Album name: {{album.name}} </label>
-        <input id="album-name" [(ngModel)]="album.name" placeholder="name">
+        <label for="album-name">Album name: </label>
+        <input id="album-name" [(ngModel)]="album.name" placeholder="Album name">
     </div>
 </div>
 
 <br>
 
-<button type="button" (click)="goBack()">Go back</button>
+<div class="button-div">
+    <button type="button" class="back-button" (click)="goBack()">Go back</button>
+    <button type="button" class="save-button" (click)="save()">Save</button>
+</div>

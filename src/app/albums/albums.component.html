@@ -1,9 +1,19 @@
 <h2>Your Albums</h2>
+
+<div>
+    <label for="new-album">Album name: </label>
+    <input id="new-album" #albumName />
+    <button type="button" class="add-button" (click)="add(albumName.value); albumName.value=''">
+        Add album
+    </button>
+</div>
+
 <ul class="albums">
     <li *ngFor="let album of albums">
-        <a routerLink="/detail/{{album.id}}">
+        <a routerLink="/info/{{album.id}}">
             <span class="badge">{{album.id}}</span> {{album.name}}
         </a>
+        <button type="button" class="delete-button" title="delete album" (click)="delete(album)">X</button>
         <br>
         <br>
     </li>

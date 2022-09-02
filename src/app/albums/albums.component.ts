@@ -22,4 +22,18 @@ export class AlbumsComponent implements OnInit {
     this.albumService.getAlbums().subscribe(albums => this.albums = albums);
   }
 
+  add(name: string): void {
+    name = name.trim();
+    if (!name) { return; }
+    this.albumService.addAlbum({ name } as Album)
+      .subscribe(album => {
+        this.albums.push(album);
+      });
+  }
+
+  delete(album: Album): void {
+    this.albums = this.albums.filter(a => a !== album);
+    this.albumService.deleteAlbum(album.id).subscribe();
+  }
+
 }
